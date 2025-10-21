@@ -15,28 +15,6 @@ SQLite3 database integration for data storage
 Graceful shutdown and concurrency-safe design  
 Modular architecture (`cmd`, `internal/db`, `internal/crawler`, `internal/model`)
 
----
-
-web-crawler/
-│
-├── cmd/
-│ └── main.go
-│
-├── internal/
-│ ├── crawler/
-│ │ └── crawler.go
-│ │
-│ ├── db/
-│ │ └── database.go
-│ │
-│ └── model/
-│ └── page.go
-│
-├── go.mod
-├── go.sum
-└── README.md
-
----
 
 ## Tech Stack
 

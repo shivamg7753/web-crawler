@@ -1,12 +1,12 @@
 # Go Web Crawler
 
-A **high-performance concurrent web crawler** built in **Go** that scrapes web pages, extracts their titles, counts words and links, and stores everything in a local **SQLite** database.  
+A **high-performance concurrent web crawler** built in **Go** that scrapes web pages, extracts their titles, counts words and links, and stores everything in a local **SQLite** database.
 
-Built with  using **Goroutines**, **Channels**, and **WaitGroups** for clean concurrency control.
+Built with using **Goroutines**, **Channels**, and **WaitGroups** for clean concurrency control.
 
 ---
 
-##  Features
+## Features
 
 Multi-threaded crawling using Go routines  
 Smart link discovery and deduplication  
@@ -20,38 +20,37 @@ Modular architecture (`cmd`, `internal/db`, `internal/crawler`, `internal/model`
 web-crawler/
 │
 ├── cmd/
-│   └── main.go
+│ └── main.go
 │
 ├── internal/
-│   ├── crawler/
-│   │   └── crawler.go
-│   │
-│   ├── db/
-│   │   └── database.go
-│   │
-│   └── model/
-│       └── page.go
+│ ├── crawler/
+│ │ └── crawler.go
+│ │
+│ ├── db/
+│ │ └── database.go
+│ │
+│ └── model/
+│ └── page.go
 │
 ├── go.mod
 ├── go.sum
 └── README.md
 
+---
+
+## Tech Stack
+
+| Component       | Description                                             |
+| --------------- | ------------------------------------------------------- |
+| **Language**    | Go 1.20+                                                |
+| **Database**    | SQLite3                                                 |
+| **HTML Parser** | [goquery](https://github.com/PuerkitoBio/goquery)       |
+| **Concurrency** | Goroutines + Channels + sync.WaitGroup                  |
+| **Driver**      | [mattn/go-sqlite3](https://github.com/mattn/go-sqlite3) |
 
 ---
 
-##  Tech Stack
-
-| Component | Description |
-|------------|-------------|
-| **Language** | Go 1.20+ |
-| **Database** | SQLite3 |
-| **HTML Parser** | [goquery](https://github.com/PuerkitoBio/goquery) |
-| **Concurrency** | Goroutines + Channels + sync.WaitGroup |
-| **Driver** | [mattn/go-sqlite3](https://github.com/mattn/go-sqlite3) |
-
----
-
-##  Installation & Setup
+## Installation & Setup
 
 ### 1️ Clone the repository
 
@@ -80,3 +79,4 @@ Max pages: 10 | Workers: 3
 
 Done! Check crawler.db
 Total pages crawled: 10
+```

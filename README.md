@@ -22,21 +22,22 @@ Modular architecture (`cmd`, `internal/db`, `internal/crawler`, `internal/model`
 web-crawler/
 │
 ├── cmd/
-│ └── main.go
+│   └── main.go                
 │
 ├── internal/
-│ ├── crawler/
-│ │ └── crawler.go
-│ │
-│ ├── db/
-│ │ └── database.go
-│ │
-│ └── model/
-│ └── page.go 
+│   ├── crawler/
+│   │   └── crawler.go         
+│   │
+│   ├── db/
+│   │   └── database.go        
+│   │
+│   └── model/
+│       └── page.go            
 │
-├── go.mod
-├── go.sum
-└── README.md
+├── go.mod                     
+├── go.sum                     
+└── README.md                  
+
 
 
 

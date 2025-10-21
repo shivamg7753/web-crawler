@@ -17,8 +17,6 @@ Modular architecture (`cmd`, `internal/db`, `internal/crawler`, `internal/model`
 
 ---
 
-##  Project Structure
-
 web-crawler/
 │
 ├── cmd/
@@ -37,9 +35,6 @@ web-crawler/
 ├── go.mod
 ├── go.sum
 └── README.md
-
-
-
 
 
 ---
